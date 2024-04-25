@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Lobster');
+
+
+.splitdiv{
+  height:100%;
+  width:50%;
+}
+
+/* This part contains all of the left side of the screen */
+/* ----------------------------------------- */
+#leftdiv{
+  float:left;
+  background-color:#FAFAFA;
+}
+
+#leftdivcard{
+  margin:0 auto;
+  width:50%;
+  background-color:white;
+  margin-top: 50vh; 
+  transform: translateY(-50%);
+  padding: 20px;
+  /* box-shadow: 10px 10px 1px 0px #ffb866; */
+  border-radius:10px
+}
+
+#leftbutton{
+    background-color:#FF8D0A;
+    border-radius:5px;
+    color:#FAFAFA;
+}
+
+/* ----------------------------------------- */
+
+/* This part contains all of the left side of the screen */
+/* ----------------------------------------- */
+#rightdiv{
+  float:right;
+  background-color:#FF8D0A;
+}
+
+#rightdivcard{
+  margin:0 auto;
+  width:50%;
+  margin-top: 50vh;
+  transform: translateY(-50%);
+  background-image: linear-gradient(to right, white 33%,  rgba(255,255,255,0) 0%);
+  background-position: bottom;
+  background-size: 20px 2px;
+  background-repeat: repeat-x;
+}
+
+#rightbutton{
+    background-color:#FFFFFF;
+    border-radius:5px;
+    color:#FF8D0A;
+}
+/* ----------------------------------------- */
+
+/* Basic styling */
+/* ----------------------------------------- */
+
+h1{
+  font-family:Montserrat;
+  color:#FF8D0A
+}
+
+input{
+  font-family:Montserrat;
+  font-size:16px;
+}
+
+input{
+  width:85%;
+  height:40px;
+  padding:10px;
+  margin-left:2%;
+  margin-right:2%;
+  margin-top:10px;
+  margin-bottom:10px;
+  display:inline-block;
+  background-color:#FAFAFA;
+  border:none;
+  border-bottom: 1px solid #FF8D0A;
+}
+
+input:focus {
+    outline: none !important;
+    border:1px solid #FF8D0A;
+    box-shadow: 0 0 5px #ffb866;
+}
+
+button{
+  outline: none !important;
+  font-family: Montserrat;
+  margin-bottom:15px;
+  border:none;
+  font-size:20px;
+  margin-top: 20px;
+  padding:8px;
+  padding-left:20px;
+  padding-right:20px;
+}
+
+/* ----------------------------------------- */
+
+/* Animation for the buttons from 
+
+https://codepen.io/finnhvman/pen/jLXKJw
+
+*/
+
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+.ripple:hover {
+  background: #aa5e06 radial-gradient(circle, transparent 1%, #FF8D0A 1%) center/15000%;
+}
+.ripple:active {
+  background-color: #FF8D0A;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.ripple2 {
+  background-position: center;
+  transition: background 0.8s;
+}
+.ripple2:hover {
+  background: #ffb866 radial-gradient(circle, transparent 1%, #FFFFFF 1%) center/15000%;
+}
+.ripple2:active {
+  background-color: #FAFAFA;
+  background-size: 100%;
+  transition: background 0s;
+}
+

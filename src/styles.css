@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* This allow me to have the full width of the page without the initial padding/margin*/
+
+body, html {
+  margin:0;
+  padding:0;
+  height: 100%;
+  width:100%;
+  font-family:Montserrat;
+  min-width:700px;
+}
