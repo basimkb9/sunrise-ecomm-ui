@@ -3,13 +3,14 @@
     <div class="splitdiv" id="leftdiv">
         <div id="leftdivcard">
             <h1 style="padding-top:20px;text-align:center">Sign In</h1>
-            <form  [formGroup]="loginForm" (ngSubmit)="authenticate()">
-                <input type="email" placeholder="Email" formControlName="email"/>
-                <input type="password" placeholder="Password" />
+            <p class="p-message-error" *ngIf="!errorMsg.isEmpty"></p>
+            <form [formGroup]="loginForm" (ngSubmit)="authenticate()">
+                <input type="email" placeholder="Email" formControlName="email" />
+                <input type="password" placeholder="Password" formControlName="password" />
                 <div style="text-align:center">
                     <button id="leftbutton" class="ripple2" type="submit">Login</button>
                 </div>
-            </form>
+            </form>            
         </div>
     </div>
 

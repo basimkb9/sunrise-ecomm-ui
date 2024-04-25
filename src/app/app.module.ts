@@ -7,6 +7,7 @@ import { RouterOutlet } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AuthserviceService } from './service/authservice.service';
+import { MessagesModule } from 'primeng/messages';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AuthserviceService } from './service/authservice.service';
     HttpClientModule,
     ReactiveFormsModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MessagesModule
   ],
   providers: [
     provideClientHydration(),
