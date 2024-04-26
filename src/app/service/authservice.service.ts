@@ -14,6 +14,7 @@ export class AuthserviceService {
 
   authenticate(url: string, userData: FormGroup): Observable<any> {
     const userBody = userData.value;
+    console.log(userData);
     return this.http.post(url, userBody);
   }
 }

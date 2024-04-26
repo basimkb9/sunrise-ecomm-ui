@@ -10,13 +10,13 @@
 /* ----------------------------------------- */
 #leftdiv{
   float:left;
-  background-color:#FAFAFA;
+  background-color:#FFC07F;
 }
 
 #leftdivcard{
   margin:0 auto;
   width:50%;
-  background-color:white;
+  background-color:#FFC07F;
   margin-top: 50vh; 
   transform: translateY(-50%);
   padding: 20px;
@@ -25,9 +25,9 @@
 }
 
 #leftbutton{
-    background-color:#FF8D0A;
+    background-color:#A5402D;
     border-radius:5px;
-    color:#FAFAFA;
+    color: #FAFAFA;
 }
 
 /* ----------------------------------------- */
@@ -36,25 +36,18 @@
 /* ----------------------------------------- */
 #rightdiv{
   float:right;
-  background-color:#FF8D0A;
+  background-color:#FAFAFA;
+  position: relative;
 }
 
-#rightdivcard{
-  margin:0 auto;
-  width:50%;
-  margin-top: 50vh;
-  transform: translateY(-50%);
-  background-image: linear-gradient(to right, white 33%,  rgba(255,255,255,0) 0%);
-  background-position: bottom;
-  background-size: 20px 2px;
-  background-repeat: repeat-x;
+#rightdiv img{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width: 350px;
 }
 
-#rightbutton{
-    background-color:#FFFFFF;
-    border-radius:5px;
-    color:#FF8D0A;
-}
 /* ----------------------------------------- */
 
 /* Basic styling */
@@ -62,7 +55,7 @@
 
 h1{
   font-family:Montserrat;
-  color:#FF8D0A
+  color:#A5402D
 }
 
 input{
@@ -80,19 +73,22 @@ input{
   margin-bottom:10px;
   display:inline-block;
   background-color:#FAFAFA;
+  color: #A5402D;
+  font-weight: 500;
   border:none;
-  border-bottom: 1px solid #FF8D0A;
+  border-radius: 8px;
 }
 
 input:focus {
     outline: none !important;
-    border:1px solid #FF8D0A;
-    box-shadow: 0 0 5px #ffb866;
+    border:1px solid #A5402D;
+    box-shadow: 0 0 5px #A5402D;
 }
 
 button{
   outline: none !important;
   font-family: Montserrat;
+  font-weight: 500;
   margin-bottom:15px;
   border:none;
   font-size:20px;
@@ -100,6 +96,7 @@ button{
   padding:8px;
   padding-left:20px;
   padding-right:20px;
+  color: #A5402D;
 }
 
 /* ----------------------------------------- */
@@ -115,10 +112,10 @@ https://codepen.io/finnhvman/pen/jLXKJw
   transition: background 0.8s;
 }
 .ripple:hover {
-  background: #aa5e06 radial-gradient(circle, transparent 1%, #FF8D0A 1%) center/15000%;
+  background: #aa5e06 radial-gradient(circle, transparent 1%, #A5402D 1%) center/15000%;
 }
 .ripple:active {
-  background-color: #FF8D0A;
+  background-color: #A5402D;
   background-size: 100%;
   transition: background 0s;
 }
@@ -136,3 +133,15 @@ https://codepen.io/finnhvman/pen/jLXKJw
   transition: background 0s;
 }
 
+
+/*////////////////////////////////////////////////////////*/
+
+.errorDiv{
+  height: 30px; 
+  width: 100%;
+  text-align: center;
+}
+
+.errorDiv p{
+  color: rgb(255, 70, 70);
+}

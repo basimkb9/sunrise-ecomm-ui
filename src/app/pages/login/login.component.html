@@ -3,23 +3,22 @@
     <div class="splitdiv" id="leftdiv">
         <div id="leftdivcard">
             <h1 style="padding-top:20px;text-align:center">Sign In</h1>
-            <form  [formGroup]="loginForm" (ngSubmit)="authenticate()">
-                <input type="email" placeholder="Email" formControlName="email"/>
-                <input type="password" placeholder="Password" />
+            <div class="errorDiv">
+                <p ngClass="p-message-error" *ngIf="wrongCredentialsMsg">{{ wrongCredentialsMsg }}</p>
+            </div>
+            <form [formGroup]="loginForm" (ngSubmit)="authenticate()">
+                <input type="email" placeholder="Email" formControlName="email" />
+                <input type="password" placeholder="Password" formControlName="password" />
                 <div style="text-align:center">
                     <button id="leftbutton" class="ripple2" type="submit">Login</button>
                 </div>
-            </form>
+            </form>            
         </div>
     </div>
 
     <div class="splitdiv" id="rightdiv">
         <div id="rightdivcard">
-            <h1 style="padding-top:20px;text-align:center;color:white">New here ?</h1>
-            <p style="color:white;text-align:center">Do you want to discover new things ? Just Register !</p>
-            <div style="text-align:center">
-                <button id="rightbutton" class="ripple">Sign Up</button>
-            </div>
+            <img src="../../../assets/images/sunrise-logo-transparent.png" alt="">
         </div>
     </div>
 
